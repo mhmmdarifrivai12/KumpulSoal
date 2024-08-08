@@ -4,24 +4,282 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Pengumpulan - Basic Programming</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
     <div class="container">
-        <h1>Basic Programming Competition</h1>
-        <p>Note: Maksimal pengumpulan tiap soal adalah 2 kali.</p>
-        <ul>
-            <li><a href="https://s.id/TCC_SOAL_1" target="_blank">Soal 1</a></li>
-            <li><a href="https://s.id/TCC_SOAL_2" target="_blank">Soal 2</a></li>
-            <li><a href="https://s.id/TCC_SOAL_3" target="_blank">Soal 3</a></li>
-            <li><a href="https://s.id/TCC_SOAL_4" target="_blank">Soal 4</a></li>
-            <li><a href="https://s.id/TCC_SOAL_5" target="_blank">Soal 5</a></li>
-            <li><a href="https://s.id/TCC_SOAL_6" target="_blank">Soal 6</a></li>
-            <li><a href="https://s.id/TCC_SOAL_7" target="_blank">Soal 7</a></li>
-            <li><a href="https://s.id/TCC_SOAL_8" target="_blank">Soal 8</a></li>
-            <li><a href="https://s.id/TCC_SOAL_9" target="_blank">Soal 9</a></li>
-            <li><a href="https://s.id/TCC_SOAL_10" target="_blank">Soal 10</a></li>
-        </ul>
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/UNIVERSITASTEKNOKRAT.png" alt="Logo Universitas">
+            <h1>Basic Programming Competition</h1>
+            <img src="img/logo.png" alt="Logo Perlombaan">
+        </div>
+        <p class="note">Maksimal pengumpulan per soal adalah 2 kali.</p>
+
+        <div class="question">
+            <div class="question-number">1</div>
+            <h2>Soal Nomor 1</h2>
+            <p>
+                Di Sekolah Cendekia, setiap siswa harus menerima raport akhir semester yang mencakup nilai ujian, tugas, dan kehadiran. 
+                Kepala sekolah, Bu Anita, selalu ingin memastikan bahwa setiap siswa mendapatkan penilaian yang adil. 
+                Suatu hari, Bu Anita memanggil kamu untuk membantu menghitung nilai akhir siswa. 
+                Dia memberi tahu bahwa nilai ujian berbobot 40%, tugas 30%, dan kehadiran 30%. 
+                Bu Anita juga ingin menentukan predikat berdasarkan nilai akhir yang diperoleh. 
+                Predikat nilai adalah sebagai berikut:
+            </p>
+            <ul>
+                <li>A: 80-100</li>
+                <li>B: 70-79</li>
+                <li>C: 60-69</li>
+                <li>D: 0-59 (tidak lulus)</li>
+            </ul>
+            <p>
+                Selain itu, Bu Anita ingin tahu siswa mana yang harus mengikuti ujian remedial jika nilai akhir mereka di bawah 60. 
+                Bantu Bu Anita dengan membuat program yang dapat menghitung nilai akhir dan menentukan predikat untuk setiap siswa.
+            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Nilai ujian: 75
+Nilai tugas: 85
+Nilai kehadiran: 70</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Nilai akhir: 76.5  
+Predikat: B</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_1" target="_blank">Pengumpulan Soal 1</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">2</div>
+            <h2>Soal Nomor 2</h2>
+            <p>
+                Tika adalah seorang kasir yang rajin di sebuah supermarket besar. Setiap hari, Tika melayani banyak pelanggan yang membeli berbagai macam barang. 
+                Suatu hari, Tika merasa kewalahan karena pelanggan semakin banyak dan dia harus menghitung total belanjaan setiap pelanggan dengan cepat. 
+                Dia mencatat setiap barang yang dibeli dan harganya. Jika total belanja melebihi Rp 500.000, Tika harus memberikan diskon 5%. 
+                Bantu Tika dengan membuat program yang dapat menghitung total biaya belanjaan pelanggan, termasuk diskon yang berlaku.
+            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Harga barang 1: Rp 100.000
+Jumlah barang 1: 2
+Harga barang 2: Rp 150.000
+Jumlah barang 2: 1
+Harga barang 3: Rp 50.000
+Jumlah barang 3: 3
+Harga barang 4: Rp 20.000
+Jumlah barang 4: 5</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Total belanja sebelum diskon: Rp 600.000
+Diskon: Rp 30.000
+Total belanja setelah diskon: Rp 570.000</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_2" target="_blank">Pengumpulan Soal 2</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">3</div>
+            <h2>Soal Nomor 3</h2>
+            <p>
+                Pak Ali adalah seorang pengusaha kecil yang memiliki sebuah toko kelontong. Setiap hari, Pak Ali menjual berbagai barang dengan harga yang berbeda-beda. Pak Ali ingin mengetahui total pendapatan harian dan berapa banyak diskon yang diterima oleh pelanggan. Dia mencatat harga setiap barang dan jumlah barang yang dibeli oleh pelanggan. Jika total belanja seorang pelanggan sebelum diskon adalah Rp 120.000, Pak Ali memberikan diskon 10%. Bantu Pak Ali dengan membuat program yang dapat menghitung total biaya belanja, jumlah diskon, dan total yang harus dibayar setelah diskon.            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Harga Barang A: Rp 12.000
+Jumlah Barang A: 2
+Harga Barang B: Rp 15.000
+Jumlah Barang B: 1
+Harga Barang C: Rp 20.000
+Jumlah Barang C: 3
+                        </pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Total belanja sebelum diskon: Rp 600.000
+Diskon: Rp 30.000
+Total belanja setelah diskon: Rp 570.000</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_3" target="_blank">Pengumpulan Soal 3</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">4</div>
+            <h2>Soal Nomor 4</h2>
+            <p>
+                Di toko kelontong Pak Ali, setiap hari ada banyak pelanggan yang berbelanja. Pak Ali menawarkan diskon 5% untuk setiap pembelian barang lebih dari 6 item. Suatu hari, seorang pelanggan membeli 3 Barang D dan 4 Barang E. Barang D harganya Rp 18.000 dan Barang E harganya Rp 25.000. Pak Ali ingin mengetahui berapa total biaya yang harus dibayar oleh pelanggan setelah diskon. Bantu Pak Ali dengan membuat program yang dapat menghitung total biaya belanja sebelum diskon, jumlah diskon, dan total biaya setelah diskon.            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Harga Barang D: Rp 18.000
+Jumlah Barang D: 3
+Harga Barang E: Rp 25.000
+Jumlah Barang E: 4
+                        </pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Total biaya sebelum diskon: Rp 186.000
+Diskon: Rp 9.300
+Total biaya setelah diskon: Rp 176.700
+                        </pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_4" target="_blank">Pengumpulan Soal 4</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">5</div>
+            <h2>Soal Nomor 5</h2>
+            <p>
+                Bu Anita, kepala sekolah Sekolah Cendekia, ingin mengetahui rata-rata nilai siswa di kelas 6A. Dia mencatat nilai ujian dari beberapa siswa dan meminta bantuanmu untuk menghitung rata-rata nilai mereka. Bu Anita juga ingin tahu jika ada siswa yang harus mengikuti ujian remedial jika rata-rata nilai mereka di bawah 60. Bantu Bu Anita dengan membuat program yang dapat menghitung rata-rata nilai siswa dan menentukan siapa yang harus mengikuti ujian remedial.            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Harga barang 1: Rp 100.000
+Nilai siswa 1: 75
+Nilai siswa 2: 80
+Nilai siswa 3: 60
+Nilai siswa 4: 90
+                        </pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>
+Rata-rata nilai: 76.25
+Status remedial: Tidak perlu
+                        </pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_5" target="_blank">Pengumpulan Soal 5</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">6</div>
+            <h2>Soal Nomor 6</h2>
+            <p>Pak Budi adalah seorang manajer di sebuah perusahaan. Setiap bulan, dia harus menghitung gaji karyawan berdasarkan jumlah jam kerja, tarif per jam, dan bonus jika ada. Suatu hari, Pak Budi ingin menghitung gaji untuk seorang karyawan yang telah bekerja selama 160 jam dengan tarif Rp 50.000 per jam dan mendapatkan bonus sebesar Rp 1.000.000. Bantu Pak Budi dengan membuat program yang dapat menghitung gaji total karyawan tersebut.
+            </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Jam kerja: 160
+Tarif per jam: Rp 50.000
+Bonus: Rp 1.000.000
+                        </pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Gaji total: Rp 9.000.000</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_6" target="_blank">Pengumpulan Soal 6</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">7</div>
+            <h2>Soal Nomor 7</h2>
+            <p>
+                Ibu Santi adalah seorang guru matematika yang sedang mengajarkan tentang bilangan prima kepada murid-muridnya. Dia ingin menunjukkan contoh-contoh bilangan prima kepada mereka. Suatu hari, Ibu Santi meminta bantuanmu untuk menentukan apakah sebuah bilangan adalah bilangan prima atau bukan. Bantu Ibu Santi dengan membuat program yang dapat menerima input berupa bilangan bulat dan mengeluarkan hasil apakah bilangan tersebut prima atau tidak.
+                        </p>
+            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Bilangan: 29</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Bilangan 29 adalah bilangan prima</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_7" target="_blank">Pengumpulan Soal 7</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">8</div>
+            <h2>Soal Nomor 8</h2>
+            <p>
+                Di kelas IPA, Pak Joko sedang mengajarkan tentang konversi suhu. Dia menjelaskan bagaimana cara mengonversi suhu dari Celsius ke Fahrenheit dan sebaliknya. Untuk membantu murid-muridnya memahami konsep ini, Pak Joko meminta bantuanmu untuk membuat program yang dapat melakukan konversi suhu. Program harus menerima input berupa suhu dalam Celsius atau Fahrenheit dan mengeluarkan hasil konversi suhu tersebut.            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Suhu dalam Celsius: 25</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Suhu dalam Fahrenheit: 77.0</pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_8" target="_blank">Pengumpulan Soal 8</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">9</div>
+            <h2>Soal Nomor 9</h2>
+            <p>
+                Di kelas matematika, Bu Rina sedang mengajarkan tentang lingkaran. Dia menjelaskan bagaimana cara menghitung luas dan
+                keliling lingkaran berdasarkan jari-jari. Untuk membantu murid-muridnya memahami konsep ini, Bu Rina meminta bantuanmu
+                untuk membuat program yang dapat menghitung luas dan keliling lingkaran. Program harus menerima input berupa jari-jari
+                lingkaran dan menghitung luas serta keliling lingkaran berdasarkan jari-jari tersebut. <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Jari-jari lingkaran: 7</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>Luas lingkaran: 153.94
+Keliling lingkaran: 43.98
+                        </pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_9" target="_blank">Pengumpulan Soal 9</a>
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="question-number">10</div>
+            <h2>Soal Nomor 10</h2>
+            <p>
+                Doni adalah seorang guru matematika yang sedang mengajarkan tentang bangun ruang kepada murid-muridnya. Dia menjelaskan bagaimana cara menghitung volume dan luas permukaan kubus. Untuk membantu murid-muridnya memahami konsep ini, Pak Doni meminta bantuanmu untuk membuat program yang dapat menghitung volume dan luas permukaan kubus. Program harus menerima input berupa panjang sisi kubus dan menghitung volume serta luas permukaan kubus berdasarkan panjang sisi tersebut.            <div class="examples">
+                <div class="example">
+                    <h3>Contoh Input:</h3>
+                    <pre>Panjang sisi kubus: 5</pre>
+                </div>
+                <div class="example">
+                    <h3>Contoh Output:</h3>
+                    <pre>
+Volume kubus: 125
+Luas permukaan kubus: 150                        
+                        </pre>
+                </div>
+            </div>
+            <div class="submission-link">
+                <a href="https://s.id/TCC_SOAL_10" target="_blank">Pengumpulan Soal 10</a>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
